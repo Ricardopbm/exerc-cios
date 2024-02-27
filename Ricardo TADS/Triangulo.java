@@ -9,8 +9,7 @@ public class Vinte {
         
         double base; 
         double altura;
-        double res1;
-        double resfin;
+        double resultado;
 
         
 
@@ -20,11 +19,9 @@ public class Vinte {
         System.out.println("Altura do seu Triângulo:");
         altura = input.nextInt();
 
-        res1 = base * altura;
-
-        resfin = res1 / 2;
+        resultado = base * altura / 2;
         
-        System.out.println("A área do seu triângulo é: " + resfin);
+        System.out.println("A área do seu triângulo é: " + resultado);
 
 
     }
