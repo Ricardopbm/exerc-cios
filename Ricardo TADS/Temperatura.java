@@ -8,17 +8,12 @@ public class Temperatura {
 
         
         double f; 
-        double res1;
         double c;
-
         
 
         System.out.println("Temperatura em Fahrenheit: ");
         f = input.nextInt();
-
-        res1 = f - 32;
-        c = res1 / 9 * 5;
-
+        c = (f - 32) / 9 * 5;
         
         
         System.out.println("Aqui está a conversão para Célcius: " + c);
