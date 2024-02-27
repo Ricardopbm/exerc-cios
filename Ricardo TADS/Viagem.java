@@ -7,8 +7,8 @@ public class Viagem {
         Scanner input = new Scanner(System.in); 
 
         
-        double vm; 
-        double dt;
+        double velocidademedia; 
+        double distancia;
         double horas;
         double minutos;
 
@@ -16,12 +16,12 @@ public class Viagem {
         
 
         System.out.println("Digite a velocidade média do veículo, em Km/h:");
-        vm = input.nextInt();
+        velocidademedia = input.nextInt();
 
         System.out.println("Digite a distância até o local desejado, em Km:");
-        dt = input.nextInt();
+        distancia = input.nextInt();
 
-        horas = dt / vm;
+        horas = distancia / velocidademedia;
         minutos = horas * 60;
         
 
