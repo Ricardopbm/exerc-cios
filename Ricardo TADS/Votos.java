@@ -1,13 +1,13 @@
 import java.util.Scanner;
 
-public class Evento {
+public class Votos {
     public static void main(String[] args){
 
         
         Scanner input = new Scanner(System.in); 
 
         
-        double vi; //feito
+        double vi;
 
         double vid;
 
