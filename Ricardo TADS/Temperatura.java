@@ -13,6 +13,7 @@ public class Temperatura {
 
         System.out.println("Temperatura em Fahrenheit: ");
         f = input.nextInt();
+        
         c = (f - 32) / 9 * 5;
         
         
