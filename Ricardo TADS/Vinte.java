@@ -7,8 +7,7 @@ public class Vinte {
         Scanner input = new Scanner(System.in); 
 
         
-        int numero; 
-        double multi = 0.2;
+        int numero;
         double porcentagem;
         double resultado;
 
@@ -17,7 +16,7 @@ public class Vinte {
         System.out.println("Digite um número:");
         numero = input.nextInt();
 
-        porcentagem = numero * multi;
+        porcentagem = numero * 0.2 ;
 
         resultado = porcentagem + numero;
         
