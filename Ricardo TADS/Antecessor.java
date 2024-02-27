@@ -8,7 +8,6 @@ public class Antecessor {
 
         
         int numero; 
-        int sub = 1;
         int resultado;
 
         
@@ -16,7 +15,7 @@ public class Antecessor {
         System.out.println("Digite um número inteiro:");
         numero = input.nextInt();
 
-        resultado = numero - sub;
+        resultado = numero - 1;
         System.out.println("O antecessor é: " + resultado);
 
 
