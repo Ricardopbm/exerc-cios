@@ -1,54 +1,32 @@
-import java.util.Scanner;
+mport java.util.Scanner;
 
-public class Votos {
-    public static void main(String[] args){
-
+ public class Votos {
+    public static void main(String[] args) {
         
-        Scanner input = new Scanner(System.in); 
+        Scanner in;
 
+        in = new Scanner(System.in);    
         
-        double vi;
-
-        double vid;
-
-        double ns1;
-        double ns;
-
-        double nc1; 
-        double nc;
-
-        double np1;
-        double np;
-
-
-
-        System.out.println("Insira o valor do ingresso inteiro: ");
-        vi = input.nextInt();
         
+        double eleitores, validos, brancos, nulos, percValidos, percBrancos, percNulos;
 
-        System.out.println("Insira o número de sócios participando do evento: ");
-        ns1 = input.nextInt();
-        ns = vi * 0.3 * ns1;
+        System.out.println("Digite o número total de eleitores:");
+        eleitores = in.nextInt();
+        System.out.println("Digite o número total de votos válidos:");
+        validos = in.nextInt();
+       System.out.println("Digite o número total de votos brancos:");
+        brancos = in.nextInt();
+        System.out.println("Digite o número total de votos nulos:");
+        nulos = in.nextInt();
 
-        System.out.println("Insira o número de crianças participando do evento: ");
-        nc1 = input.nextInt();
-        nc = nc1 * vi;
-
-        System.out.println("Insira o número de pessoas acima de 10 anos, não sócios, participando do evento: ");
-        np1 = input.nextInt();
-        np = np1 * vi;
-
-
-        double publicot = ns1 + nc1 + np1;
-        double renda = ns + np;
-        double deficit = ns1 * vi + nc + np;
-
-        System.out.println("O Público total foi de: " + publicot + " de pessoas.");
-        System.out.println("A renda total foi de: " + renda + "R$.");
-        System.out.println("O valor que deixou de ser adiquirido, devido a descontos e isenções foi de: " + deficit + "R$");
-
-
-
+        percValidos = validos / eleitores * 100;
+        percBrancos = brancos / eleitores * 100;
+        percNulos = nulos / eleitores * 100;
+        
+        System.out.println("Dos " + (int)eleitores + " eleitores:");
+        System.out.println(percValidos + "% (" + (int)validos + ") são válidos;");
+        System.out.println(percBrancos + "% (" + (int)brancos + ") são brancos;");
+        System.out.println(percNulos + "% (" + (int)nulos + ") são nulos;");
     }
-
+ }
 }
