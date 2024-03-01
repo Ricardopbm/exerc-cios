@@ -1,36 +1,36 @@
 import java.util.Scanner;
 
-public class Quadrado {
+public class Carne {
     public static void main(String[] args){
 
         
         Scanner input = new Scanner(System.in); 
 
         
-        double h1; //feito
-        double m1; //feito
-        double c1; //feito
-        double h;  //feito
-        double m; //feito
-        double c; //feito
+        double quantHomens; //feito
+        double quantMulheres; //feito
+        double quantCriancas; //feito
+        double carneHomem;  //feito
+        double carnemulher; //feito
+        double carneCriancas; //feito
         double soma; //feito
         double media; //feito
         double mediafinal;
 
         System.out.println("Quantidade de homens: ");
-        h1 = input.nextInt();
-        h = h1 * 400;
+        quantHomens = input.nextInt();
+        carneHomem = quantHomens * 400;
 
         System.out.println("Quantidade de mulheres: ");
-        m1 = input.nextInt();
-        m = m1 * 320;
+        quantMulheres = input.nextInt();
+        carnemulher = quantMulheres * 320;
 
         System.out.println("Quantidade de crianças: ");
-        c1 = input.nextInt();
-        c = c1 * 200;
+        quantCriancas = input.nextInt();
+        carneCriancas = quantCriancas * 200;
 
 
-        soma = h + m + c;
+        soma = carneHomem + carnemulher + carneCriancas;
         media = soma / 3;
         mediafinal = media * 0.2;
         
